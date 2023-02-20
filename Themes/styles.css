@@ -114,6 +114,10 @@ a:hover {
     margin: 8px 8px;
 }
 
+.example h1 {
+    width: initial;
+}
+
 .green {
     background-color: var(--green);
 }
