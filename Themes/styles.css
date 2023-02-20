@@ -1,0 +1,153 @@
+:root {
+
+    /* 
+     *  Color Palette 
+     */
+
+    /* Primary Color */
+    --green-h: 173;
+    --green-s: 36%;
+    --green-l: 55%;
+
+    /* Tones */
+    --green: hsl(var(--green-h), var(--green-s), var(--green-l));
+    --green-light: hsl(var(--green-h), var(--green-s), calc(var(--green-l) + 15%));
+    --green-dark: hsl(var(--green-h), var(--green-s), calc(var(--green-l) - 15%));
+    
+    /* Primary Color */
+    --purple-h: 283;
+    --purple-s: 17%;
+    --purple-l: 55%;
+
+    /* Tones */
+    --purple: hsl(var(--purple-h), var(--purple-s), var(--purple-l));
+    --purple-light: hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) + 15%));
+    --purple-dark: hsl(var(--purple-h), var(--purple-s), calc(var(--purple-l) - 15%));
+    
+    /* Primary Color */
+    --blue-h: 222;
+    --blue-s: 53%;
+    --blue-l: 21%;
+
+    /* Tones */
+    --blue: hsl(var(--blue-h), var(--blue-s), var(--blue-l));
+    --blue-light: hsl(var(--blue-h), var(--blue-s), calc(var(--blue-l) + 15%));
+    --blue-dark: hsl(var(--blue-h), var(--blue-s), calc(var(--blue-l) - 15%));
+
+    /* 
+     *  Theme Colors 
+     */
+    --primary-color: var(--green);
+    --primary-border-color: var(--purple-dark);
+    --primary-hover-color: var(--green-light);
+
+    --background-color: var(--blue-dark);
+    --text-on-dark-color: hsl(var(--purple-h), var(--purple-s), 95%);
+
+    --accent-bg-color: var(--purple-light);
+    --text-on-light-color: hsl(var(--green-h), var(--green-s), 5%);
+}
+
+html {
+    height: 99%;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-on-dark-color);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    min-height: 100%;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;  
+}
+
+h1 {
+    width: 100%;
+}
+
+footer {
+    padding: 8px;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--primary-hover-color);
+}
+
+.card-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+.card {
+    background: linear-gradient(to top right, var(--accent-bg-color) 40%, var(--primary-color) 95%);
+    color: var(--text-on-light-color);
+    padding: 16px;
+    border-radius: 16px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    width: 25%;
+    margin: 8px 8px;
+}
+
+
+.example {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    width: 25%;
+    margin: 8px 8px;
+}
+
+.green {
+    background-color: var(--green);
+}
+
+.green-l {
+    background-color: var(--green-light);
+}
+
+.green-d {
+    background-color: var(--green-dark);
+}
+
+.purple {
+    background-color: var(--purple);
+}
+
+.purple-l {
+    background-color: var(--purple-light);
+}
+
+.purple-d {
+    background-color: var(--purple-dark);
+}
+
+.blue {
+    background-color: var(--blue);
+    color: white;
+}
+
+.blue-l {
+    background-color: var(--blue-light);
+}
+
+.blue-d {
+    background-color: var(--blue-dark);
+    color: white;
+}

@@ -1,0 +1,100 @@
+.card-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    --border-radius: 16px;
+    --padding: 16px;
+
+    background: var(--background-color-overlay);
+    color: var(--text-color-normal);
+    text-decoration: none;
+    border: 3px solid var(--accent-color);
+
+    margin: 8px 8px;
+    border-radius: var(--border-radius);
+    width: 200px;
+    min-height: 200px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: column nowrap;
+
+    flex: 1 0 auto;
+    width: 25%;
+}
+
+.card:hover {
+    color: var(--text-color-normal);
+}
+.card:hover .card-title {
+    color: var(--text-color-softer);
+}
+
+
+.card-title {
+    /* background-color: var(--background-color-overlay); */
+    border-bottom: 3px solid var(--accent-color-softer);
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    padding: var(--padding);
+}
+
+.card-body {
+    padding: var(--padding);
+}
+
+.card-footer {
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-content: center;
+    width: 100%;
+    padding: var(--padding);
+}
+
+.card-footer .button {
+    margin-bottom: 0px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.nav-mainmenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    border-top: 3px solid var(--background-color-richer);
+    border-bottom: 3px solid var(--background-color-richer);
+
+    padding: 16px 32px;
+    width: 100%;
+}
+
+.nav-mainmenu>a,
+.nav-submenu {
+    margin-right: 32px;
+}
+
+.nav-submenu {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+}
+
+.nav-submenu nav {
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+.nav-subtitle {
+    text-decoration: none;
+    font-size: 1.1em;
+}
